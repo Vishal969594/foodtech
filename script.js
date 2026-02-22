@@ -17,10 +17,13 @@ function updateTime() {
 
 // Fetch metrics from API
 async function fetchMetrics() {
+    console.log('Fetching metrics from:', API_BASE_URL + '/api/metrics');
     try {
-        const response = await fetch(`${API_BASE_URL}/api/metrics`);
-        if (!response.ok) throw new Error('Failed to fetch metrics');
+        const response = await fetch(API_BASE_URL + '/api/metrics');
+        console.log('Response status:', response.status);
+        if (!response.ok) throw new Error('Failed to fetch metrics: ' + response.status);
         const data = await response.json();
+        console.log('Metrics data:', data);
         updateMetricsDisplay(data);
     } catch (error) {
         console.error('Error fetching metrics:', error);
