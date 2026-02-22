@@ -13,8 +13,10 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: CLIENT_ORIGIN === '*' ? true : CLIENT_ORIGIN,
-    credentials: true
+    origin: ['https://vishal969594.github.io', 'http://localhost:4000', '*'],
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
   })
 );
 
