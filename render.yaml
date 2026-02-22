@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: oniontech-api
+    runtime: node
+    plan: free
+    buildCommand: cd oniontech-backend && npm install
+    startCommand: cd oniontech-backend && node src/server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: CLIENT_ORIGIN
+        value: '*'
