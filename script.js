@@ -1,4 +1,4 @@
-// API Configuration
+// API Configuration - Update this with your Render API URL after deployment
 const API_BASE_URL = window.location.hostname === 'localhost' 
     ? 'http://localhost:4000' 
     : 'https://oniontech-api.onrender.com';
