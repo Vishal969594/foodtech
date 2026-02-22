@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnionTech Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <div class="logo-icon">📦</div>
+                <div class="logo-text">
+                    <h1>OnionTech Dashboard</h1>
+                    <p>Enhanced Storage Technology System</p>
+                </div>
+            </div>
+            <div class="header-info">
+                <span>Sep 15, 2024</span>
+                <span>10:30:45 AM</span>
+                <div class="notification-bell">🔔</div>
+                <div class="notification-bell">⚙️</div>
+                <div class="notification-bell">👤</div>
+            </div>
+        </div>
+
+        <div class="nav-tabs">
+            <button class="nav-tab active">🏠 Storage Overview</button>
+            <button class="nav-tab">🔍 Quality Control</button>
+            <button class="nav-tab">📊 Analytics</button>
+        </div>
+
+        <div class="dashboard-grid">
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div class="metric-icon" style="background: linear-gradient(135deg, #fd79a8, #e84393);">📦</div>
+                    <div class="change-indicator change-positive">+5.2%</div>
+                </div>
+                <div class="metric-value" id="totalOnions">24,450</div>
+                <div class="metric-label">Total Onions Stored</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div class="metric-icon" style="background: linear-gradient(135deg, #74b9ff, #0984e3);">🌡️</div>
+                    <div class="change-indicator change-positive">+5.2%</div>
+                </div>
+                <div class="metric-value" id="temperature">4.2°C</div>
+                <div class="metric-label">Current Temperature</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div class="metric-icon" style="background: linear-gradient(135deg, #00b894, #00a085);">💧</div>
+                    <div class="change-indicator change-positive">65%</div>
+                </div>
+                <div class="metric-value" id="humidity">65%</div>
+                <div class="metric-label">Humidity Level</div>
+            </div>
+
+            <div class="metric-card">
+                <div class="metric-header">
+                    <div class="metric-icon" style="background: linear-gradient(135deg, #a29bfe, #6c5ce7);">📈</div>
+                    <div class="change-indicator change-positive">+68%</div>
+                </div>
+                <div class="metric-value" id="shelfLife">72 Days</div>
+                <div class="metric-label">Enhanced Shelf Life</div>
+            </div>
+        </div>
+
+        <div class="charts-section">
+            <div class="chart-container">
+                <div class="chart-title">
+                    <div class="chart-icon">📍</div>
+                    Storage Locations
+                </div>
+                <div class="storage-locations">
+                    <div class="location-item">
+                        <div class="location-info">
+                            <div class="status-dot status-active"></div>
+                            <span>Warehouse 1</span>
+                        </div>
+                        <span>4.2°C</span>
+                    </div>
+                    <div class="location-item">
+                        <div class="location-info">
+                            <div class="status-dot status-active"></div>
+                            <span>Active Storage</span>
+                        </div>
+                        <span>65°C</span>
+                    </div>
+                    <div class="location-item">
+                        <div class="location-info">
+                            <div class="status-dot status-active"></div>
+                            <span>Cold Storage B</span>
+                        </div>
+                        <span>65°C</span>
+                    </div>
+                    <div class="location-item">
+                        <div class="location-info">
+                            <div class="status-dot status-warning"></div>
+                            <span>Quality Retention</span>
+                        </div>
+                        <span>35%</span>
+                    </div>
+                    <div class="location-item">
+                        <div class="location-info">
+                            <div class="status-dot status-alert"></div>
+                            <span>Alert Status</span>
+                        </div>
+                        <span>25%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="performance-grid">
+            <div class="performance-card">
+                <div class="performance-value" style="color: #00b894;">+68%</div>
+                <div class="performance-label">Enhancement Performance</div>
+                <div class="progress-bar">
+                    <div class="progress-fill progress-green" style="width: 68%;"></div>
+                </div>
+            </div>
+
+            <div class="performance-card">
+                <div class="performance-value" style="color: #74b9ff;">92%</div>
+                <div class="performance-label">System Efficiency</div>
+                <div class="progress-bar">
+                    <div class="progress-fill progress-blue" style="width: 92%;"></div>
+                </div>
+            </div>
+
+            <div class="performance-card">
+                <div class="performance-value" style="color: #fdcb6e;">85%</div>
+                <div class="performance-label">Quality Grade A</div>
+                <div class="progress-bar">
+                    <div class="progress-fill progress-orange" style="width: 85%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

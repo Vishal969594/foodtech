@@ -1,0 +1,44 @@
+{
+  "metrics": {
+    "totalOnions": 24450,
+    "temperatureC": 4.2,
+    "humidityPct": 65,
+    "shelfLifeDays": 72,
+    "updatedAt": "2026-02-22T00:00:00.000Z"
+  },
+  "locations": [
+    {
+      "id": "warehouse-1",
+      "name": "Warehouse 1",
+      "status": "active",
+      "temperatureC": 4.2,
+      "humidityPct": 65
+    },
+    {
+      "id": "active-storage",
+      "name": "Active Storage",
+      "status": "active",
+      "temperatureC": 4.2,
+      "humidityPct": 65
+    },
+    {
+      "id": "cold-storage-b",
+      "name": "Cold Storage B",
+      "status": "active",
+      "temperatureC": 4.2,
+      "humidityPct": 65
+    },
+    {
+      "id": "quality-retention",
+      "name": "Quality Retention",
+      "status": "warning",
+      "qualityPct": 35
+    },
+    {
+      "id": "alert-status",
+      "name": "Alert Status",
+      "status": "alert",
+      "qualityPct": 25
+    }
+  ]
+}
